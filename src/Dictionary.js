@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import react, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
@@ -8,13 +8,11 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    //console.log(response.data.meanings);
     setResults(response.data);
   }
 
   function search(event) {
     event.preventDefault();
-
     // documentation: https://api.shecodes.io/dictionary/v1/define?word=book&key=dbbf0b0ffte4fa30oaa8d9a8aa2bc032
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=dbbf0b0ffte4fa30oaa8d9a8aa2bc032`;
     axios.get(apiUrl).then(handleResponse);
