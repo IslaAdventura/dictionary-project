@@ -57,7 +57,7 @@ function App() {
             <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
               <img
                 src="https://images.pexels.com/lib/api/pexels-white.png"
-                alt="pexels image in white"
+                alt="pexels in white"
               />
             </a>
             <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
