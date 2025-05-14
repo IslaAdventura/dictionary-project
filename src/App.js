@@ -16,8 +16,8 @@ function App() {
           <Dictionary defaultKeyword="adventure" />
         </main>
         <footer>
-          {" "}
-          English Dictionary for the curious traveler was coded by{" "}
+          English Dictionary for the curious traveler
+          <br /> was coded by{" "}
           <a
             href="https://www.linkedin.com/in/stephanie-anderson-rn-bsn-4658b336/"
             target="_blank"
@@ -41,6 +41,19 @@ function App() {
           >
             Netlify
           </a>
+          <br />
+          <br />
+          Photos provided by
+          <a href="https://www.shecodes.io"> SheCodes</a> and
+          <a href="https://www.pexels.com"> Pexels</a>
+          <div className="pexels">
+            <a href="https://www.pexels.com">
+              <img src="https://images.pexels.com/lib/api/pexels-white.png" />
+            </a>
+            <a href="https://www.pexels.com">
+              <img src="https://images.pexels.com/lib/api/pexels.png" />
+            </a>
+          </div>
         </footer>
       </div>
     </div>
