@@ -44,14 +44,27 @@ function App() {
           <br />
           <br />
           Photos provided by
-          <a href="https://www.shecodes.io"> SheCodes</a> and
-          <a href="https://www.pexels.com"> Pexels</a>
+          <a href="https://www.shecodes.io" target="_blank" rel="noreferrer">
+            {" "}
+            SheCodes
+          </a>{" "}
+          and
+          <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
+            {" "}
+            Pexels
+          </a>
           <div className="pexels">
-            <a href="https://www.pexels.com">
-              <img src="https://images.pexels.com/lib/api/pexels-white.png" />
+            <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
+              <img
+                src="https://images.pexels.com/lib/api/pexels-white.png"
+                alt="Description of the image"
+              />
             </a>
-            <a href="https://www.pexels.com">
-              <img src="https://images.pexels.com/lib/api/pexels.png" />
+            <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
+              <img
+                src="https://images.pexels.com/lib/api/pexels.png"
+                alt="Description of the image"
+              />
             </a>
           </div>
         </footer>
