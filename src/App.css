@@ -4,15 +4,45 @@ body {
 }
 
 a {
-  color: rgb(1, 121, 121);
+  color: blue;
 }
 
 .App header h2 {
-  font-size: 35px;
+  font-family: "Imperial Script", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 0.75;
+  padding: 10px;
   text-align: center;
 }
 
+.App .e {
+  font-size: 80px;
+  font-style: bold;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.App .d {
+  font-size: 80px;
+  font-style: bold;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.App .secondLine {
+  font-size: 45px;
+}
+
 .App footer {
+  font-size: 14px;
   margin: 30px 0;
   text-align: center;
+}
+
+.App footer a {
+  color: blue;
+  font-size: 16px;
+  text-decoration: none;
 }

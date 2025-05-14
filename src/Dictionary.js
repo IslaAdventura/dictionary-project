@@ -44,7 +44,8 @@ export default function Dictionary(props) {
             />
           </form>
           <div className="hint">
-            Suggested words: steam, mechanical, lollygag, dirigible, etc.
+            Suggested words: steam, submarine, gear, mechanical, lollygag,
+            dirigible, etc.
           </div>
         </section>
         <Results results={results} />
