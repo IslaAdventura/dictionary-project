@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
   let [phoneticsData, setPhoneticsData] = useState(null);
@@ -21,14 +22,14 @@ export default function Phonetics(props) {
       <div className="Phonetics">
         {phoneticsData.map(function (phonetic, index) {
           return (
-            <span key={index}>
-              {phonetic.text}{" "}
+            <div key={index}>
               {phonetic.audio && (
                 <a href={phonetic.audio} target="_blank" rel="noreferrer">
-                  LISTEN 🔊
+                  {props.word} 🔊
                 </a>
               )}
-            </span>
+              <span className="text">{phonetic.text}</span>
+            </div>
           );
         })}
       </div>
