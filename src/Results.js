@@ -2,7 +2,6 @@ import React from "react";
 import Meaning from "./Meaning.js";
 import Phonetics from "./Phonetics.js";
 import "./Results.css";
-import Photos from "./Photos.js";
 
 export default function Results(props) {
   if (props.results) {
