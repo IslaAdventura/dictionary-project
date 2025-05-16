@@ -1,21 +1,25 @@
 .Phonetics {
-  line-height: 32px;
+  line-height: 40px;
+  margin: 0;
 }
 
 .Phonetics a {
+  background-color: rgb(246, 227, 204);
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
   color: blue;
   font-size: 16px;
   font-weight: 500;
   margin-right: 15px;
+  margin-top: 500px;
   padding: 6px 10px;
   text-decoration: none;
 }
 
 .Phonetics a:hover {
   background: blue;
-  border: 2px solid #ddd;
+  border: 2px solid blue;
   color: white;
   transition: all 150ms ease-in-out;
 }

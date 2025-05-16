@@ -3,22 +3,23 @@
   font-weight: bold;
   line-height: 1.5;
 }
-.Results .viewPhotos {
+
+.Results .viewPhotos a {
+  background-color: rgb(246, 227, 204);
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  color: blue;
   float: right;
   font-size: 15px;
-
+  font-weight: 500;
   margin: 15px 0;
   padding: 5px 10px;
   text-decoration: none;
 }
 
-.Results .viewPhotos a {
-  color: blue;
-  text-decoration: none;
-}
-
 .Results .viewPhotos a:hover {
-  text-decoration: underline;
+  background: blue;
+  border: 2px solid blue;
+  color: white;
+  transition: all 150ms ease-in-out;
 }

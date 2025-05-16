@@ -9,7 +9,11 @@ function App() {
           <h2>
             · <span className="e">E</span>nglish · <span className="d">D</span>
             ictionary · <br />
-            <span className="secondLine"> for the curious traveler </span>
+            <span className="secondLine">
+              {" "}
+              for the <span className="c">C</span>urious{" "}
+              <span className="t"> T</span>raveler
+            </span>
           </h2>
         </header>
         <main>
@@ -43,29 +47,28 @@ function App() {
           </a>
           <br />
           <br />
-          Photos provided by
-          <a href="https://www.shecodes.io" target="_blank" rel="noreferrer">
-            {" "}
-            SheCodes
-          </a>{" "}
-          and
-          <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
-            {" "}
-            Pexels
-          </a>
-          <div className="pexels">
-            <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
-              <img
-                src="https://images.pexels.com/lib/api/pexels-white.png"
-                alt="pexels in white"
-              />
-            </a>
-            <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
-              <img
-                src="https://images.pexels.com/lib/api/pexels.png"
-                alt="dark logo for pexels"
-              />
-            </a>
+          Photos provided by:{" "}
+          <div>
+            <div className="sheCodesLogo">
+              <a
+                href="https://www.shecodes.io"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://www.shecodes.io/assets/branding/logo-shecodes-3dfa60aeab8ef361842da5a2b6d46db3af1b7afafefee3dde0a9846389de754b.png"
+                  alt="SheCodes logo for footer"
+                />
+              </a>{" "}
+            </div>
+            <div className="pexels">
+              <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
+                <img
+                  src="https://images.pexels.com/lib/api/pexels.png"
+                  alt="dark logo for pexels"
+                />
+              </a>
+            </div>
           </div>
         </footer>
       </div>

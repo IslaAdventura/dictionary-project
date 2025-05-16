@@ -1,5 +1,5 @@
 .App {
-  background: rgb(180, 179, 179);
+  background: #f0f0f0;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 auto;
   max-width: 960px;
@@ -37,6 +37,18 @@ a {
   font-size: 45px;
 }
 
+.App .c {
+  font-size: 60px;
+  font-style: bold;
+  letter-spacing: 1px;
+}
+
+.App .t {
+  font-size: 60px;
+  font-style: bold;
+  letter-spacing: 1px;
+}
+
 .App footer {
   font-size: 14px;
   margin: 30px;
@@ -47,7 +59,7 @@ a {
 
 .App footer a {
   color: blue;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -55,6 +67,12 @@ a {
   text-decoration: underline;
 }
 
-.App .pexels img {
+.App .sheCodesLogo img {
+  margin-top: 5px;
   max-width: 100px;
+}
+
+.App .pexels img {
+  max-width: 80px;
+  margin-top: 10px;
 }
