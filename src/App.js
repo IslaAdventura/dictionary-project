@@ -14,8 +14,8 @@ function App() {
             ictionary · <br />
             <span className="secondLine">
               {" "}
-              for the <span className="c">C</span>urious{" "}
-              <span className="t"> T</span>raveler
+              for the <span className="c">c</span>urious{" "}
+              <span className="t"> t</span>raveler
             </span>
           </h2>
         </header>
