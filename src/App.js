@@ -1,13 +1,13 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
 import AnimationHotAirBalloon from "./AnimationHotAirBalloon.js";
+import AnimationHotAirBalloon2 from "./AnimationHotAirBalloon2.js";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <AnimationHotAirBalloon />
-
         <header className="App-header">
           <h2>
             · <span className="e">E</span>nglish · <span className="d">D</span>
@@ -17,8 +17,10 @@ function App() {
               for the <span className="c">c</span>urious{" "}
               <span className="t"> t</span>raveler
             </span>
+            <AnimationHotAirBalloon2 />
           </h2>
         </header>
+
         <main>
           <Dictionary defaultKeyword="adventure" />
         </main>

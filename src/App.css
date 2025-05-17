@@ -35,6 +35,7 @@ a {
 
 .App .secondLine {
   font-size: 45px;
+  margin-left: 200px;
 }
 
 .App .c {
@@ -95,6 +96,7 @@ a {
   .App .secondLine {
     font-size: 40px;
     line-height: 1;
+    margin-left: 0;
     padding-bottom: 200px 2px;
   }
 
