@@ -1,0 +1,190 @@
+.hot-air-balloon-container {
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: left;
+  margin-top: 5px;
+  padding: 0;
+  width: 10px;
+  z-index: 10;
+  animation: float 5s infinite alternate ease-in-out;
+}
+
+.steam-puffs {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.steam-puff-1 {
+  position: absolute;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  z-index: 2;
+  left: 40px;
+  animation: puff 2s infinite alternate;
+}
+
+.steam-puff-2 {
+  position: absolute;
+  bottom: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  z-index: 2;
+  left: 35px;
+  animation: puff 2s infinite alternate-reverse;
+}
+
+.balloon {
+  width: 60px;
+  height: 70px;
+  background: radial-gradient(circle at 40% 40%, #d4a76a 0%, #9e6b25 100%);
+  border-radius: 50% 50% 40% 40% / 50% 50% 45% 45%;
+  border: 4px solid #705214;
+  position: relative;
+  box-shadow: inset -20px -10px 30px rgba(0, 0, 0, 0.3),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+  animation: sway 3s infinite alternate ease-in-out;
+}
+
+.panel {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #705214;
+  top: 0;
+}
+
+.panel-1 {
+  left: 25%;
+}
+
+.panel-2 {
+  left: 50%;
+}
+
+.panel-3 {
+  left: 75%;
+}
+
+.valve {
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  background: #4a3c22;
+  border-radius: 3px;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rope {
+  position: absolute;
+  height: 50px;
+  width: 1px;
+  background: #5d4827;
+  bottom: -50px;
+}
+
+.rope-1 {
+  left: 20px;
+  transform: rotate(5deg);
+}
+
+.rope-2 {
+  right: 20px;
+  transform: rotate(-5deg);
+}
+
+.rope-3 {
+  left: 40px;
+}
+
+.rope-4 {
+  right: 40px;
+}
+
+.basket {
+  width: 30px;
+  height: 20px;
+  background: linear-gradient(to bottom, #b08a56 0%, #866530 100%);
+  border: 2px solid #705214;
+  border-radius: 5px 5px 10px 10px;
+  position: relative;
+  margin-top: 5px;
+  box-shadow: inset -10px -5px 20px rgba(0, 0, 0, 0.2),
+    2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.basket-detail {
+  width: 100%;
+  height: 5px;
+  background: #5d4827;
+  position: absolute;
+  top: 10px;
+}
+
+.engine-pipe {
+  position: absolute;
+  background: #555;
+  bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.pipe-1 {
+  width: 6px;
+  height: 8px;
+  left: 5px;
+}
+
+.pipe-2 {
+  width: 4px;
+  height: 10px;
+  bottom: -5px;
+  right: 10px;
+  background: #444;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-30px);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes puff {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}

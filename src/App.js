@@ -1,5 +1,6 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
+import AnimationHotAirBalloon from "./AnimationHotAirBalloon.js";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <div className="container">
         <header className="App-header">
           <h2>
+            <span>
+              <AnimationHotAirBalloon />
+            </span>
             · <span className="e">E</span>nglish · <span className="d">D</span>
             ictionary · <br />
             <span className="secondLine">
