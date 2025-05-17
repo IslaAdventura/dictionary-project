@@ -17,3 +17,9 @@
   padding: 6px 4px;
   width: 100%;
 }
+
+@media (max-width: 900px) {
+  .Dictionary .hint {
+    font-size: 11px;
+  }
+}

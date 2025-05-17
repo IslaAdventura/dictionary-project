@@ -6,11 +6,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <AnimationHotAirBalloon />
+
         <header className="App-header">
           <h2>
-            <span>
-              <AnimationHotAirBalloon />
-            </span>
             · <span className="e">E</span>nglish · <span className="d">D</span>
             ictionary · <br />
             <span className="secondLine">

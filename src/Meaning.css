@@ -39,3 +39,26 @@
   opacity: 0.9;
   padding-left: 10px;
 }
+
+@media (max-width: 900px) {
+  .Meaning h3 {
+    font-size: 18px;
+    opacity: 1;
+  }
+
+  .Meaning .definition {
+    font-size: 14px;
+  }
+
+  .Meaning .example {
+    opacity: 1;
+  }
+
+  .Meaning .synonyms {
+    opacity: 1;
+  }
+
+  .Meaning .antonyms {
+    opacity: 1;
+  }
+}

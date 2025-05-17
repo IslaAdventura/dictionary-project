@@ -76,3 +76,35 @@ a {
   max-width: 80px;
   margin-top: 10px;
 }
+
+@media (max-width: 900px) {
+  .App header h2 {
+    font-size: 35px;
+  }
+
+  .App .e {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  .App .d {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  .App .secondLine {
+    font-size: 35px;
+    line-height: 1;
+    padding-bottom: 200px 2px;
+  }
+
+  .App .c {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+
+  .App .t {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+}

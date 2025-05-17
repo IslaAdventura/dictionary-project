@@ -23,3 +23,15 @@
   color: white;
   transition: all 150ms ease-in-out;
 }
+
+@media (max-width: 900px) {
+  .Results h2 {
+    font-size: 25px;
+  }
+
+  .Results .viewPhotos a {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px -15px;
+  }
+}

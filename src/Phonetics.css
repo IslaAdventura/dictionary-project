@@ -28,3 +28,9 @@
   font-weight: bold;
   opacity: 0.7;
 }
+
+@media (max-width: 900px) {
+  .Phonetics {
+    display: none;
+  }
+}
