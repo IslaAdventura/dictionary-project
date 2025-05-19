@@ -78,9 +78,11 @@ a {
   margin-top: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .App header h2 {
     font-size: 40px;
+    position: relative;
+    z-index: 9999;
   }
 
   .App .e {
@@ -98,6 +100,8 @@ a {
     line-height: 1;
     margin-left: 0;
     padding-bottom: 200px 2px;
+    position: relative;
+    z-index: 9999;
   }
 
   .App .c {
@@ -108,5 +112,22 @@ a {
   .App .t {
     font-size: 45px;
     letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 900px) {
+  .App header h2 {
+    font-size: 40px;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .App .secondLine {
+    font-size: 40px;
+    line-height: 1;
+    margin-left: 0;
+
+    position: relative;
+    z-index: 9999;
   }
 }

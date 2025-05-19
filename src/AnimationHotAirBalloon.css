@@ -7,13 +7,22 @@
   margin-bottom: -150px;
 }
 
+@media (max-width: 800px) {
+  .balloon {
+    height: 125px;
+    width: 125px;
+    display: flex;
+    float: left;
+    margin-left: -20px;
+  }
+}
+
 @media (max-width: 900px) {
   .balloon {
-    height: 10em;
-    width: 10em;
+    height: 125px;
+    width: 125px;
     display: flex;
-    justify-content: left;
-    position: relative;
-    margin-left: -40px;
+    float: left;
+    margin-left: -20px;
   }
 }
