@@ -22,9 +22,9 @@ export default function Dictionary(props) {
     } else {
       setError(
         <p>
-          Sorry, we couldn't find the word{" "}
-          <span className="errorKeyword">{keyword}</span>. Please try a
-          different search.
+          Sorry, the word <span className="errorKeyword">{keyword}</span> does
+          not exist in this timeline.
+          <br /> Please try a different word.
         </p>
       );
       setResults(null);
@@ -38,9 +38,9 @@ export default function Dictionary(props) {
   function handleError(error) {
     setError(
       <p>
-        Sorry, we couldn't find the word{" "}
-        <span className="errorKeyword">{keyword}</span>. Please try a different
-        search.
+        Sorry, the word <span className="errorKeyword">{keyword}</span> does not
+        exist in this timeline.
+        <br /> Please try a different word.
       </p>
     );
 
@@ -52,6 +52,21 @@ export default function Dictionary(props) {
   }
 
   function search() {
+    if (!keyword || keyword.trim() === "") {
+      setError(
+        <p>
+          ☣️☣️☣️☣️☣️ UH OH YOU BROKE THE ENTIRE APP! ☣️☣️☣️☣️☣️
+          <br />
+          Just Kidding!
+          <br />
+          Make sure the search bar is not left BLANK.
+        </p>
+      );
+      setResults(null);
+      setPhotos([]);
+      return;
+    }
+
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=dbbf0b0ffte4fa30oaa8d9a8aa2bc032`;
     axios.get(apiUrl).then(handleResponse).catch(handleError);
 
@@ -73,7 +88,9 @@ export default function Dictionary(props) {
 
   function load() {
     setLoaded(true);
-    search();
+    if (props.defaultKeyword && props.defaultKeyword.trim() !== "") {
+      search();
+    }
   }
 
   if (loaded) {
@@ -84,6 +101,7 @@ export default function Dictionary(props) {
             <input
               type="search"
               onChange={handleKeywordChange}
+              value={keyword}
               autoFocus={true}
               placeholder="Search for a word..."
             />
@@ -97,11 +115,7 @@ export default function Dictionary(props) {
           </div>
         </section>
 
-        {error && (
-          <section className="errorMessage">
-            <p>{error}</p>
-          </section>
-        )}
+        {error && <section className="errorMessage">{error}</section>}
 
         <Results results={results} />
         <Photos photos={photos} />
