@@ -56,23 +56,37 @@ export default function Phonetics(props) {
     );
   }
 
+  const validPhonetics = phoneticsData.filter(
+    (phonetic) => phonetic.text && phonetic.text.trim() !== ""
+  );
+
   return (
     <div className="Phonetics">
-      {phoneticsData.map(function (phonetic, index) {
-        if (phonetic.audio || phonetic.text) {
+      {validPhonetics.length > 0 ? (
+        validPhonetics.map(function (phonetic, index) {
           return (
-            <div key={index}>
-              {phonetic.audio && (
+            <div key={index} className="phonetic-item">
+              {phonetic.audio ? (
                 <a href={phonetic.audio} target="_blank" rel="noreferrer">
-                  {props.word} 🔊
+                  🔊{phonetic.text}
                 </a>
+              ) : (
+                <span>🔊{phonetic.text}</span>
               )}
-              {phonetic.text && <span className="text">{phonetic.text}</span>}
             </div>
           );
-        }
-        return null;
-      })}
+        })
+      ) : (
+        <div className="phonetic-item">
+          <a
+            href={`https://en.wiktionary.org/wiki/${props.word}#Pronunciation`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            🔊
+          </a>
+        </div>
+      )}
     </div>
   );
 }
