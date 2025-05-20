@@ -15,11 +15,62 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 6px 4px;
-  width: 100%;
+  width: 85%;
 }
 
-@media (max-width: 900px) {
+.Dictionary .button {
+  background-color: #2e90c8;
+  border: 1px solid #2e90c8;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+  padding: 6px 4px;
+  text-align: center;
+  width: 10%;
+}
+.Dictionary .button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+  background: blue;
+  border: 2px solid blue;
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.Dictionary .errorMessage {
+  font-size: 20px;
+  text-align: center;
+}
+
+.Dictionary .errorKeyword {
+  font-size: 30px;
+  font-style: italic;
+  color: blue;
+}
+
+@media (max-width: 800px) {
   .Dictionary .hint {
     font-size: 11px;
+  }
+
+  .Dictionary .errorMessage {
+    font-size: 14px;
+  }
+
+  .Dictionary .errorKeyword {
+    font-size: 14px;
+  }
+
+  .Dictionary input {
+    width: 80%;
+  }
+
+  .Dictionary .button {
+    font-size: 14px;
+    width: 15%;
   }
 }

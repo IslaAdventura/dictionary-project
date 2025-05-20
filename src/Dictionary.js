@@ -20,8 +20,13 @@ export default function Dictionary(props) {
       setResults(response.data);
       setError(null);
     } else {
-      console.log("Invalid API response structure:", response.data);
-      setError("Sorry, we couldn't find that word, Please try another search.");
+      setError(
+        <p>
+          Sorry, we couldn't find the word{" "}
+          <span className="errorKeyword">{keyword}</span>. Please try a
+          different search.
+        </p>
+      );
       setResults(null);
     }
   }
@@ -31,13 +36,18 @@ export default function Dictionary(props) {
   }
 
   function handleError(error) {
-    console.log("Dictionary API error:", error);
-    setError("Sorry, we couldn't find that word. Please try another search.");
+    setError(
+      <p>
+        Sorry, we couldn't find the word{" "}
+        <span className="errorKeyword">{keyword}</span>. Please try a different
+        search.
+      </p>
+    );
+
     setResults(null);
   }
 
   function handleImageError(error) {
-    console.log("Image API error:", error);
     setPhotos([]);
   }
 
@@ -77,6 +87,9 @@ export default function Dictionary(props) {
               autoFocus={true}
               placeholder="Search for a word..."
             />
+            <button type="submit" className="button">
+              search
+            </button>
           </form>
           <div className="hint">
             Suggested words: steam, submarine, gear, mechanical, lollygag,
@@ -85,7 +98,7 @@ export default function Dictionary(props) {
         </section>
 
         {error && (
-          <section className="error-message">
+          <section className="errorMessage">
             <p>{error}</p>
           </section>
         )}

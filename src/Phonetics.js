@@ -13,14 +13,12 @@ export default function Phonetics(props) {
       setLoaded(true);
       setError(false);
     } else {
-      console.log("Unexpected phonetics API response structure", response.data);
       setError(true);
       setLoaded(true);
     }
   }
 
   function handleError(error) {
-    console.log("Phonetics API error:", error);
     setError(true);
     setLoaded(true);
   }
