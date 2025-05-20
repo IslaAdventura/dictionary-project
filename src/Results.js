@@ -4,7 +4,12 @@ import Phonetics from "./Phonetics.js";
 import "./Results.css";
 
 export default function Results(props) {
-  if (props.results) {
+  if (
+    props.results &&
+    props.results.word &&
+    props.results.meanings &&
+    Array.isArray(props.results.meanings)
+  ) {
     return (
       <div className="Results">
         <section>

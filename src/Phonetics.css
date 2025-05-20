@@ -1,6 +1,8 @@
 .Phonetics {
   line-height: 40px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .Phonetics a {
