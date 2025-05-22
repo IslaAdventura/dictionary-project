@@ -17,14 +17,3 @@
     loop: none;
   }
 }
-
-@media (max-width: 900px) {
-  .balloon {
-    height: 125px;
-    width: 125px;
-    display: flex;
-    float: left;
-    margin-left: -20px;
-    loop: none;
-  }
-}

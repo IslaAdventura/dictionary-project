@@ -55,7 +55,7 @@ export default function Dictionary(props) {
     if (!keyword || keyword.trim() === "") {
       setError(
         <p>
-          ☣️☣️☣️☣️☣️ UH OH YOU BROKE THE ENTIRE APP! ☣️☣️☣️☣️☣️
+          ☣️ UH OH YOU BROKE THE ENTIRE APP! ☣️
           <br />
           Just Kidding!
           <br />

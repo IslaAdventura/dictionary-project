@@ -53,6 +53,14 @@
 }
 
 @media (max-width: 800px) {
+  .Dictionary {
+    margin: 10px 0;
+  }
+
+  .Dictionary section {
+    margin: 20px 15px;
+    padding: 10px;
+  }
   .Dictionary .hint {
     font-size: 11px;
   }
@@ -66,11 +74,11 @@
   }
 
   .Dictionary input {
-    width: 80%;
+    width: 72%;
   }
 
   .Dictionary .button {
     font-size: 14px;
-    width: 15%;
+    width: 24%;
   }
 }
